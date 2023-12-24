@@ -102,13 +102,13 @@ namespace MiniBillar {
             if (type === GameConstants.NOTIFICATION_CUE_BALL_POTTED) {
                 text.text = "CUE BALL POCKETED";
             } else if (type === GameConstants.NOTIFICATION_NO_BALL_TOUCHED) {
-                text.text = "NO BALL TOUCHED";
+                text.text = "KHÔNG CÓ BI NÀO CHẠM VÀO";
             } else if (type === GameConstants.NOTIFICATION_TIMEOUT) {
-                text.text = "OUT OF TIME";
+                text.text = "HẾT GIỜ";
             } else if (type === GameConstants.NOTIFICATION_WRONG_BALL_POTTED) {
                 text.text = "WRONG BALL POCKETED";
             } else if (type === GameConstants.NOTIFICATION_WRONG_BALL_TOUCHED) {
-                text.text = "WRONG BALL TOUCHED FIRST";
+                text.text = "ĐÁNH SAI BI CHẠM VÀO ĐẦU TIÊN";
             } else if (type === GameConstants.NOTIFICATION_NONE) {
                 text.visible = false;
             }
