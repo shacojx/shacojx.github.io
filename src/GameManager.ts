@@ -126,7 +126,7 @@ namespace MiniBillar {
 
             if (enteringFromSplash) {
 
-                lechuck.ads.showInterlevelAd("https://ext.minijuegos.com/video/tags.php?id=mini-pool-io&type=desktop", function () {
+                lechuck.ads.showInterlevelAd("#", function () {
                     GameManager.game.paused = true;
                 }, function (): void {
 
@@ -170,7 +170,7 @@ namespace MiniBillar {
 
         public static enterPVPGame(): void {
 
-            lechuck.ads.showInterlevelAd("https://ext.minijuegos.com/video/tags.php?id=mini-pool-io&type=desktop", function () {
+            lechuck.ads.showInterlevelAd("#", function () {
                 GameManager.game.paused = true;
             }, function (): void {
 
