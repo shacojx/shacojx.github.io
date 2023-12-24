@@ -126,30 +126,30 @@ namespace MiniBillar {
 
             if (enteringFromSplash) {
 
-                // lechuck.ads.showInterlevelAd("#", function () {
-                //     GameManager.game.paused = true;
-                // }, function (): void {
+                lechuck.ads.showInterlevelAd("https://ext.minijuegos.com/video/tags.php?id=mini-pool-io&type=desktop", function () {
+                    GameManager.game.paused = true;
+                }, function (): void {
 
-                //     GameManager.game.paused = false;
+                    GameManager.game.paused = false;
 
-                //     GameManager.fullscreenFilter(function (): void {
+                    GameManager.fullscreenFilter(function (): void {
 
-                //         GameManager.resetMatchVars();
-                //         GameVars.gameMode = GameConstants.SOLO_MODE;
-                //         GameManager.game.state.start("PoolState", true, false);
-                //     });
+                        GameManager.resetMatchVars();
+                        GameVars.gameMode = GameConstants.SOLO_MODE;
+                        GameManager.game.state.start("PoolState", true, false);
+                    });
 
-                // }, function (): void {
+                }, function (): void {
 
-                //     GameManager.game.paused = false;
+                    GameManager.game.paused = false;
 
-                //     GameManager.fullscreenFilter(function (): void {
+                    GameManager.fullscreenFilter(function (): void {
 
-                //         GameManager.resetMatchVars();
-                //         GameVars.gameMode = GameConstants.SOLO_MODE;
-                //         GameManager.game.state.start("PoolState", true, false);
-                //     });
-                // });
+                        GameManager.resetMatchVars();
+                        GameVars.gameMode = GameConstants.SOLO_MODE;
+                        GameManager.game.state.start("PoolState", true, false);
+                    });
+                });
             } else {
 
                 GameManager.resetMatchVars();
@@ -170,37 +170,37 @@ namespace MiniBillar {
 
         public static enterPVPGame(): void {
 
-            // lechuck.ads.showInterlevelAd("#", function () {
-            //     GameManager.game.paused = true;
-            // }, function (): void {
+            lechuck.ads.showInterlevelAd("https://ext.minijuegos.com/video/tags.php?id=mini-pool-io&type=desktop", function () {
+                GameManager.game.paused = true;
+            }, function (): void {
 
-            //     GameManager.game.paused = false;
+                GameManager.game.paused = false;
 
-            //     GameManager.fullscreenFilter(function (): void {
+                GameManager.fullscreenFilter(function (): void {
 
-            //         GameManager.resetMatchVars();
+                    GameManager.resetMatchVars();
 
-            //         const roomCreated = Communication.CommunicationManager.joinRoom(GameVars.gameData.playerData);
-            //         if (roomCreated) {
-            //             GameManager.game.state.start("LobbyState", true, false);
-            //         }
-            //     });
+                    const roomCreated = Communication.CommunicationManager.joinRoom(GameVars.gameData.playerData);
+                    if (roomCreated) {
+                        GameManager.game.state.start("LobbyState", true, false);
+                    }
+                });
 
-            // }, function (): void {
+            }, function (): void {
 
-            //     GameManager.game.paused = false;
+                GameManager.game.paused = false;
 
-            //     GameManager.fullscreenFilter(function (): void {
+                GameManager.fullscreenFilter(function (): void {
 
-            //         GameManager.resetMatchVars();
+                    GameManager.resetMatchVars();
 
-            //         const roomCreated = Communication.CommunicationManager.joinRoom(GameVars.gameData.playerData);
+                    const roomCreated = Communication.CommunicationManager.joinRoom(GameVars.gameData.playerData);
 
-            //         if (roomCreated) {
-            //             GameManager.game.state.start("LobbyState", true, false);
-            //         }
-            //     });
-            // });
+                    if (roomCreated) {
+                        GameManager.game.state.start("LobbyState", true, false);
+                    }
+                });
+            });
         }
 
         public static enterEquipment(): void {
